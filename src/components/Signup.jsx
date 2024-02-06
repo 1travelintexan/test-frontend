@@ -29,7 +29,7 @@ function Signup() {
 
       .catch((error) => {
         console.log("error logging in", error);
-        // setErrorMessage(error.response.data.errorMessage);
+        setErrorMessage(error.response.data.errorMessage);
       });
   };
 
