@@ -28,7 +28,8 @@ function Signup() {
       })
 
       .catch((error) => {
-        setErrorMessage(error.response.data.errorMessage);
+        console.log("error logging in", error);
+        // setErrorMessage(error.response.data.errorMessage);
       });
   };
 
