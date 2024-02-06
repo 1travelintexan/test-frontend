@@ -23,7 +23,7 @@ function Signup() {
     axios
       .post(`${API_URL}/auth/signup`, requestBody)
       .then((response) => {
-        console.log(response.data);
+        console.log("signed up", response);
         navigate("/login");
       })
 
